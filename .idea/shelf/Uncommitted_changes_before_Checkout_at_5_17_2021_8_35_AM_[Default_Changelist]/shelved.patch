@@ -1,0 +1,52 @@
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 21c0fe66d6351a9aa1e05174fc5f00396fe59409)
++++ .idea/gradle.xml	(date 1621215285480)
+@@ -1,8 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
++        <option name="testRunner" value="PLATFORM" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="modules">
+Index: .idea/modules.xml
+===================================================================
+--- .idea/modules.xml	(revision 21c0fe66d6351a9aa1e05174fc5f00396fe59409)
++++ .idea/modules.xml	(revision 21c0fe66d6351a9aa1e05174fc5f00396fe59409)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/MyHomiee.iml" filepath="$PROJECT_DIR$/MyHomiee.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/runConfigurations.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"RunConfigurationProducerService\">\r\n    <option name=\"ignoredProducers\">\r\n      <set>\r\n        <option value=\"org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer\" />\r\n        <option value=\"org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer\" />\r\n        <option value=\"org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/runConfigurations.xml	(revision 21c0fe66d6351a9aa1e05174fc5f00396fe59409)
++++ .idea/runConfigurations.xml	(date 1621215285515)
+@@ -3,6 +3,7 @@
+   <component name="RunConfigurationProducerService">
+     <option name="ignoredProducers">
+       <set>
++        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
+         <option value="org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer" />
+         <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer" />
+         <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer" />
