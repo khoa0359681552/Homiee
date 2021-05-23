@@ -72,7 +72,6 @@ public class ChartTemp extends Fragment {
     View view;
 
 
-
     //String pathRoom = "/Room/1";
     @Nullable
     @Override
@@ -81,6 +80,9 @@ public class ChartTemp extends Fragment {
         btnSelectDay = view.findViewById(R.id.btnSelectDay);
         btnViewchart = view.findViewById(R.id.btnDrawChart);
         txtInfo = view.findViewById(R.id.txtInfo);
+        dateMl = System.currentTimeMillis() - 1000*3600;
+        hmMl = 0;
+
         btnViewchart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +94,7 @@ public class ChartTemp extends Fragment {
         String[] options = new String[]{"hour","day","week"};
         ArrayAdapter<String> adapter= new ArrayAdapter<>(context,R.layout.support_simple_spinner_dropdown_item,options);
         spinner.setAdapter(adapter);
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -104,7 +107,7 @@ public class ChartTemp extends Fragment {
             }
         });
         btnSelectHour = view.findViewById(R.id.btnSelectHour);
-
+        // co ban thi can xem lai ve git dung vay :
         btnSelectDay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
