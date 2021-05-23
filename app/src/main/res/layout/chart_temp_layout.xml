@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:id="@+id/spinnerMode"
+        android:spinnerMode="dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Date"
+            android:id="@+id/btnSelectDay"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:text="Hour"
+            android:id="@+id/btnSelectHour"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:text="View Chart"
+            android:id="@+id/btnDrawChart"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <TextView
+        android:text="Info"
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/tempChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>
