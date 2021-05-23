@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseFirestore db= FirebaseFirestore.getInstance();
         CollectionReference usersRef= db.collection("User");
 
-        addData();
+        //addData();
 
         /*
         HashMap<String,Object> user= new HashMap<>();
